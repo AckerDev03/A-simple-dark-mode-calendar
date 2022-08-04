@@ -17,9 +17,22 @@ header{
 	text-transform: uppercase;
 	font-size: 20px;
 }
+
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.calender-icon{
+	font-size: 40px;
+}
+
 header h1{
 	display: inline;
-	margin-bottom: 10px;
+	padding: 10px;
+	font-family: 'Fraunces', serif;
 }
 
 .underline{
@@ -52,8 +65,6 @@ header h1{
 	display: grid;
 	grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
 	justify-items: center;
-	/* place-items: center;
-	row-gap: 1rem; */
 	padding: 10px;
 	text-align: center;
 	width: 300px;
@@ -61,8 +72,9 @@ header h1{
 }
 
 .weeks{
+	font-family: 'Montagu Slab', serif;
 	color: #1d90f4;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .day {
@@ -78,24 +90,31 @@ header h1{
 	transition: background-color 0.5s;
 }
 .day:hover{
-	background-color: #104b97;
+	background-color: #3066ac;
 }
 
 .disabled {
 	color: #dfdfdf60;
 	cursor: not-allowed;
 }
-.current {
-	background-color: #f3f9fe;
-	color: #104b97;
-}
+
 .active {
 	background-color: #1d90f4;
 	color: #fff;
 }
 
 .designby{
-	text-align: center;
 	margin: 20px;
 	padding: 15px;
+}
+
+.designby h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.designby code{
+	padding: 0 5px;
+	color: #1d90f4;
 }
