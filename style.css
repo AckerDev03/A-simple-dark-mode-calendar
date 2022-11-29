@@ -8,6 +8,7 @@
 body {
 	background-color: #202424;
 	height: 100vh;
+	color: #f5f1f1;
 }
 
 header{
@@ -21,12 +22,18 @@ header{
 .title{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	margin-bottom: 20px;
+}
+
+.header-title{
+	display: flex;
+	align-items: center;
 }
 
 .calender-icon{
 	font-size: 40px;
+	margin-right: 10px;
 }
 
 header h1{
@@ -34,6 +41,11 @@ header h1{
 	padding: 10px;
 	font-family: 'Fraunces', serif;
 }
+
+.bi{
+	cursor: pointer;
+}
+
 
 .underline{
 	border: 1px solid #7c7777;
@@ -43,7 +55,6 @@ header h1{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #202424;
 	flex-wrap: wrap;
 }
 
@@ -51,7 +62,7 @@ header h1{
 	width: 250px;
 	height: 300px;
 	border-radius: 20px;
-	background-color: #251d1d9a;
+	background: #251d1d9a;
 	box-shadow: 0 0 10px 10px #cccccca4;
 	padding: 10px;
 	margin: 30px;
